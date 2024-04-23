@@ -82,11 +82,11 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 29px;
-    width: 29px; 
+    height: 28px;
+    width: 28px; 
     color: transparent;
     background-color:#41980a;
-    border: 0.5px solid rgb(241, 241, 241,0.25);  
+    border: 1px solid rgb(241, 241, 241,0.25);  
 }
 
 .unknown:hover{
