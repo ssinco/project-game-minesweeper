@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Minesweeper</title>
+    <meta name="description" content="Enjoy the classic Minesweeper game online! Test your logic and strategy skills by clearing the grid without detonating any mines. Choose your difficulty level and uncover squares strategically. Can you flag all the mines and reveal all safe tiles to win? Play now for free!">
+
+    <link rel="icon" type="image/png" href="/Users/ssinco/Desktop/Bootcamp Projects/Minesweeper/images/favicon_win.png">
+    <link rel="stylesheet" href="style.css">
+
+    <script defer src="app.js"></script>
+    <style>
+        /* import Quantico and Roboto */
+        @import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+
+
+</head>
+<body>
+    
+    <div class = "header">
+        <h1>Minesweeper</h1>
+    </div>
+
+    <div class = "menu"><h3>Pick difficulty to start game</h3>
+        <button class = "difficultyButton easy">Easy</button>
+        <button class = "difficultyButton medium">Medium</button>
+        <button class = "difficultyButton hard">Hard</button>
+        <p id ="seeGameRules">See Game Rules</p>
+    </div>
+
+
+    <div class = "gameContainer">
+        <div class = "gridContainer clickable"> 
+        <!-- minesweeper grid dynamically created here -->
+        </div>
+
+        <div class = "inGameButtons">
+            <button id = "changeDifficulty">Change Difficulty</button>
+            <button id = "reset">Reset Game</button>
+        </div>
+
+        <div class = "playerStats">
+            <h3 id = "displayBombCount"></h3>
+            <h3 id = "displayTimer"></h3>
+        </div>
+
+    </div>
+
+    <!-- Popups -->
+    <div class = "popUpContainer">
+        <div class = "popUps" id = "winMessage">
+            <img src="/Users/ssinco/Desktop/Bootcamp Projects/Minesweeper/images/icon_win.png">
+            <h2>You win! All bombs found</h2>
+            <h2 id = "displayTimer"></h2>
+            <button class = "seeFinalBoard">Show Bombs</button>
+        </div>
+        
+        <div class = "popUps" id = "loseMessage">
+            <img src="/Users/ssinco/Desktop/Bootcamp Projects/Minesweeper/images/icon_lose.png">
+            <h2>Oh no! You hit a bomb</h2>
+            <h2 id = "displayTimer"></h2>
+            <button class = "seeFinalBoard">Show Bombs</button>
+
+        </div>
+        
+        <div class = "popUps" id = "rulesMessage">
+            <h2>Game Rules</h2>
+            <ol>
+                <li><p><strong>Game Board:</strong> The game board consists of a grid of squares. Each square may contain a mine or be empty.</p></li>
+                <li><p><strong>Mines:</strong> mines are hidden within the grid squares. The number of mines and the size of the board can vary depending on the difficulty level chosen by the player.</p></li>
+                <li><p><strong>Opening Squares:</strong> The game begins with the player selecting a square on the grid to open. If the selected square contains a mine, the game is over, and the mine detonates. If the square is empty, the game continues, and the square reveals a number indicating how many mines are adjacent to it (including diagonals).</p></li>
+                <li><p><strong>Numbers:</strong> Each number revealed on the board represents the count of mines adjacent to that square. For example, if a square reveals the number "3," it means that there are three mines in the eight squares surrounding it.</p></li>
+                <li><p><strong>Empty Squares:</strong> If a square is revealed to be empty (i.e., it has no adjacent mines), it automatically opens all adjacent empty squares.</p></li>
+                <li><p><strong>Flagging Mines:</strong> Players can mark squares they suspect contain mines by flagging them. This helps to keep track of where the mines might be.</p></li>
+                <li><p><strong><u>Winning:</u></strong> The player wins the game when all non-mine squares are opened. This means that all mines have been correctly flagged, and all non-mine squares have been revealed.</p></li>
+                <li><p><strong><u>Losing:</u></strong> The player loses the game if they reveal a square containing a mine. In this case, all mines on the board are typically revealed, and the game ends.</p></li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
+
+

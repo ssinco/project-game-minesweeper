@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+    font-family: "Quantico";
+}
+
+
+h1 {
+    color: white;
+    font-size: 3em;
+    margin-bottom: 0px;
+}
+
+h3 {
+    color: white;
+}
+
+p {
+    color: rgb(55, 55, 55);
+    font-family: Roboto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #136d15;
+}
+
+li {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-top: 20px;
+}
+button {
+    cursor: pointer;
+    margin: 10px;
+}
+
+.header{
+    margin-top: 50px;
+
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.inGameButtons {
+    display:flex;
+    justify-content: center;
+}
+
+.playerStats {
+    text-align: center;
+}
+
+.newGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start
+}
+
+.gameContainer {
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.gridContainer {
+    margin: 30px;
+}
+
+
+.grid-tile {
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 29px;
+    width: 29px; 
+    color: transparent;
+    background-color:#41980a;
+    border: 0.5px solid rgb(241, 241, 241,0.25);  
+}
+
+.unknown:hover{
+    opacity: 0.75;
+}
+
+.safe {
+    background-color: #9e6d30;
+    color:white; 
+    cursor: default;
+}
+
+.flagged {
+    background-image: url('/Users/ssinco/Desktop/Bootcamp Projects/Minesweeper/images/icon_flag.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bombClicked {
+    background-image: url('/Users/ssinco/Desktop/Bootcamp Projects/Minesweeper/images/icon_bomb.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: red;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.difficultyButton {
+    margin: 15px;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 1.25em
+}
+
+.popUps {
+    display: none;
+    text-align: center;
+    padding: 30px;
+    width: 700px;
+    border-radius: 15px;
+    background-color: white;
+    margin-top: 125px;
+    overflow-y: auto;
+    max-height: 80vh;
+}
+
+
+.popUpContainer {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-start;
+    position: fixed;
+    background-color: rgba(239, 239, 240, 0.75);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.tryAgain {
+    cursor: pointer;
+}
+
+#seeGameRules {
+    color: white;
+}
+
+#seeGameRules:hover{
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+#rulesMessage {
+    background-color: white;
+}
+#winMessage {
+    background-color: white;
+}
+#loseMessage {
+    background-color: white;
+}
+
+
+.safe.three {
+    font-weight: bold; 
+    font-size: 1.1em; 
+    color:white;
+}
+
+.safe.four{
+    font-weight: bold; 
+    font-size: 1.1em; 
+    color:rgb(255, 255, 255);
+}
+
+.safe.five {
+    font-weight: bold; 
+    font-size: 1.5em; 
+    color:rgb(0, 0, 0);  
+}
+
+.safe.six {
+    font-weight: bold; 
+    font-size: 1.5em; 
+    color:rgb(0, 0, 0);  
+}
+
+.safe.seven {
+    font-weight: bold; 
+    font-size: 1.5em; 
+    color:rgb(0, 0, 0);  
+}
+
+.safe.eight {
+    font-weight: bold; 
+    font-size: 1.5em; 
+    color:rgb(0, 0, 0);  
+}
+
+
