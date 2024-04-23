@@ -100,13 +100,13 @@ button {
 }
 
 .flagged {
-    background-image: url('/Users/ssinco/Desktop/Bootcamp Projects/Minesweeper/images/icon_flag.png');
+    background-image: url('images/icon_flag.png');
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 .bombClicked {
-    background-image: url('/Users/ssinco/Desktop/Bootcamp Projects/Minesweeper/images/icon_bomb.png');
+    background-image: url('images/icon_bomb.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-color: red;

@@ -28,17 +28,17 @@ const displayBombCount = $("#displayBombCount")
 const displayTimer = $$$("#displayTimer")
 
 // Sound effects
-const soundFlag = new Audio ("/Users/ssinco/Desktop/Bootcamp Projects/Minesweeper/audio/mixkit-small-hit-in-a-game-2072.wav")
+const soundFlag = new Audio ("audio/mixkit-small-hit-in-a-game-2072.wav")
 soundFlag.volume = 0.5
-const soundWin = new Audio("/Users/ssinco/Desktop/Bootcamp Projects/Minesweeper/audio/mixkit-game-bonus-reached-2065.wav")    
+const soundWin = new Audio("audio/mixkit-game-bonus-reached-2065.wav")    
 soundWin.volume = 0.10
 
-const soundNewGame =  new Audio("/Users/ssinco/Desktop/Bootcamp Projects/Minesweeper/audio/mixkit-flute-alert-2307.wav")
+const soundNewGame =  new Audio("audio/mixkit-flute-alert-2307.wav")
 // const soundWin = new Audio()
-const soundLose = new Audio("/Users/ssinco/Desktop/Bootcamp Projects/Minesweeper/audio/mixkit-player-losing-or-failing-2042.wav")
-const soundReveal = new Audio("/Users/ssinco/Desktop/Bootcamp Projects/Minesweeper/audio/mixkit-game-ball-tap-2073.wav")
+const soundLose = new Audio("audio/mixkit-player-losing-or-failing-2042.wav")
+const soundReveal = new Audio("audio/mixkit-game-ball-tap-2073.wav")
 
-const soundRevealMulti = new Audio("/Users/ssinco/Desktop/Bootcamp Projects/Minesweeper/audio/mixkit-bonus-earned-in-video-game-2058.wav")
+const soundRevealMulti = new Audio("audio/mixkit-bonus-earned-in-video-game-2058.wav")
 soundRevealMulti.volume = 0.25
 
 
