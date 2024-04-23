@@ -44,7 +44,7 @@ soundRevealMulti.volume = 0.25
 
 /*----------------- constants ------------------*/
 
-const bombPercent = 0.13;
+const bombPercent = 0.15;
 
 /*----------------- variables ------------------*/
 
@@ -98,9 +98,11 @@ function startTimer(){
 function buildGrid(size){    
     // Play newgame sound
     soundNewGame.play();
-    
+
     // set row and column count, to be used
     rowCount = size;
+
+    firstClick = true
 
     // create grid based off difficulty
     let newGrid = document.createElement('div')
@@ -321,6 +323,8 @@ popUpContainer.addEventListener('click', () => {
     popUps.forEach((popUp) => {popUp.style.display = "none"})
 })
 
+let firstClick = true
+
 // Tile listeners
 function attachListeners(){
     gridTiles.forEach((tile) => {  
@@ -340,12 +344,15 @@ function attachListeners(){
                 // Add 'safe' class to the tile div
                 event.target.classList.add("safe")
                 event.target.classList.remove("unknown")
-                
+                if (firstClick === true){
+                    revealAdjTiles(event.target.id.substring(4),1)
+                }
                 // If adj tile also has no bombCount reveal any adjacent tiles that also have no bomb count
                 if (!event.target.textContent){
                     soundRevealMulti.play()
                     revealAdjTiles(event.target.id.substring(4),1)
-                } 
+                }
+                firstClick = false 
                 checkWin()
             }
         })
