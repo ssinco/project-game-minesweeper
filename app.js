@@ -98,7 +98,7 @@ function startTimer(){
 function buildGrid(size){    
     // Play newgame sound
     soundNewGame.play();
-
+    
     // set row and column count, to be used
     rowCount = size;
 

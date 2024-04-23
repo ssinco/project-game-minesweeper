@@ -56,8 +56,15 @@ button {
 }
 
 .playerStats {
+    margin-top: 10px;
     text-align: center;
 }
+
+#displayBombCount, #displayTimer {
+    display: inline;
+    margin: 0px 10px 0px 10px 
+}
+
 
 .newGrid {
     display: flex;
@@ -70,10 +77,11 @@ button {
     display: none;
     align-items: center;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .gridContainer {
-    margin: 30px;
+    margin: 20px;
 }
 
 
