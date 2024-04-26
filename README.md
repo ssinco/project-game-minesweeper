@@ -24,6 +24,9 @@ Repository for minesweeper game
 ## Link to Deployment
 https://ssinco.github.io/project-minesweeper/
 
+## Attributions
+* Icons: https://www.flaticon.com/
+* Sound effects: https://mixkit.co/free-sound-effects/arcade/
 
 ## Technologies Used
 * JavaScript
